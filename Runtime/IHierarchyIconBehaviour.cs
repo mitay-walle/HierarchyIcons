@@ -1,7 +1,12 @@
+using System;
 using UnityEngine;
 
-public interface IHierarchyIconBehaviour
+namespace Plugins.mitaywalle.HierarchyIcons
 {
-    string EditorIconName { get; }
-    Color EditorIconBGColor { get; }
+    public interface IHierarchyIconBehaviour
+    {
+        string EditorIconName { get; }
+        Color EditorIconBGColor { get; }
+        Type EditorIconBuiltInType { get; }
+    }
 }
